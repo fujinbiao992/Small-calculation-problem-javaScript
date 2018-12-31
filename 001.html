@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>传智专修学院-2018级全栈应用</title>
+</head>
+<body>
+
+    <script>
+        /*
+        给定数据集：12312312423498768761234876873214
+      
+        编写js程序，统计数据集中数字1出现的次数，并通过console.log进行打印
+        
+        */
+        var str = '12312312423498768761234876873214';
+        
+        function num_1(str) {
+          var tmp_arr = str.split('');
+
+          var tmp_num =0;
+          for(var i = 0; i < tmp_arr.length; i++){
+            if (tmp_arr[i] === '1') {
+              tmp_num ++;
+            }
+          }
+
+          return tmp_num;
+        }
+        
+        console.log(num_1(str));
+      </script>
+</body>
+</html>
